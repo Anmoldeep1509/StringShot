@@ -2,12 +2,13 @@
 Simple Project to handle and manipulate large data sets made of strings
 
 
-## Todo
-[ ] Write XLS to CSV converter
-[X] Write appending function
-[ ] Create feature chooser method
-[ ] Make GUI for operations
-[ ] Shift System to NodeJS and Python3 for future support
+## Todo-
+
+ - [ ] Write XLS to CSV converter
+ - [X] Write appending function
+ - [ ] Create feature chooser method
+ - [ ] Make GUI for operations
+ - [ ] Shift System to NodeJS and Python3 for future support
 
 
 ## Setup
