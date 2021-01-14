@@ -14,6 +14,11 @@ Just install the dependencies using this:
 pip install -r requirements.txt
 ```
 
+put your data in a new folder named 'data' this way:
+
+* put excel files in 'xls' folder
+* generated csv files will be saved in 'csv' folder
+
 ## Reference Links
 
 ### Excel to CSV conversions
