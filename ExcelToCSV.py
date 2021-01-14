@@ -1,19 +1,41 @@
 #importing pandas as pd 
 import pandas as pd 
+import os
+# import all required library 
+import xlrd  
+import csv 
+import pandas as pd 
+
+
+
+# *******************************************
+# ******* unfinished code ---- DO NOT USE ****
+# *******************************************
+
+
+dataDir = './data/'
+# list excel file names
+arr = os.listdir(dataDir + '/xls/')
+print(arr)
+
+# open workbook by sheet index, 
+# optional - sheet_by_index() 
+sheet = xlrd.open_workbook("Test.xlsx").sheet_by_index(0) 
   
-# Read and store content 
-# of an excel file  
-read_file = pd.read_excel ("Test.xlsx") 
+# writer object is created 
+col = csv.writer(open("T.csv",  
+                      'w',  
+                      newline="")) 
   
-# Write the dataframe object 
-# into csv file 
-read_file.to_csv ("Test.csv",  
-                  index = None, 
-                  header=True) 
-    
+# writing the data into csv file 
+for row in range(sheet.nrows): 
+    # row by row write  
+    # operation is perform 
+    col.writerow(sheet.row_values(row)) 
+  
 # read csv file and convert  
 # into a dataframe object 
-df = pd.DataFrame(pd.read_csv("Test.csv")) 
+df = pd.DataFrame(pd.read_csv("T.csv")) 
   
 # show the dataframe 
 df
